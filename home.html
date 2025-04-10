@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span>uncode</span>
+            </div>
+            <div class="navbar-items">
+                <ul>
+                    <li><a href="#">Demos</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Extra</a></li>
+                </ul>
+            </div>
+            <div class="quote">
+                <span>Get a Quote</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="header-section">
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="image/city.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="header-content">
+            <h1>A digital design </h1>
+            <p>and multimedia firm</p>
+            <a href="#" class="cta-button">></a>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat, ante vitae fermentum
+                lacinia, tortor enim dictum libero, nec bibendum purus justo vel lorem. Etiam scelerisque consequat
+                tortor, ut dapibus nisl eleifend a. Donec vitae ligula sed ipsum tincidunt malesuada ac sed dui. Aenean
+                in venenatis lorem. Nulla facilisi. Fusce tincidunt, ipsum non malesuada vehicula, elit lorem hendrerit
+                elit, eget rutrum ipsum ante et libero.</p>
+        </div>
+    </section>
+
+    <!-- Columns Section -->
+    <section class="columns-section">
+        <div class="container">
+            <div class="column-p">
+                <h3>01. Strategy</h3>
+                <p>Thinking at the junction of beauty and elegance to create strong, lasting and remarkable design and
+                    products.</p>
+            </div>
+            <div class="column-p">
+                <h3>02. Design</h3>
+                <p>Doing at the fulcrum of aesthetics and function to craft an inspiring, compelling and authentic
+                    narrative.</p>
+            </div>
+            <div class="column-p">
+                <h3>03. Development</h3>
+                <p>Working at the nexus of aesthetics and sustainability to craft meaningful design ideas that endure.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Section  -->
+    <section class="image-section">
+        <div class="image-container">
+            <div class="image-box">
+                <img src="image/5.jpg" alt="Image 1">
+            </div>
+            <div class="image-box">
+                <img src="image/7.jpg" alt="Image 2">
+            </div>
+            <div class="image-box">
+                <img src="image/6.jpg" alt="Image 3">
+            </div>
+            <div class="image-box">
+                <img src="image/8.jpg" alt="Image 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Two Columns Section -->
+    <section class="two-columns-section">
+        <div class="container">
+            <div class="left-column">
+                <h2>Digital Works</h2>
+                <p>With Love</p>
+            </div>
+            <div class="right-column">
+                <blockquote>
+                    “We collaborate with people, teams, and businesses to develop design systems, strategies, and
+                    processes to do a better creative work everyday.”
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Four Columns Section -->
+    <section class="four-columns-section">
+        <div class="container">
+            <div class="column">
+                <h3>16</h3>
+                <p>Developers</p>
+            </div>
+            <div class="column">
+                <h3>42</h3>
+                <p>Sites of the Day</p>
+            </div>
+            <div class="column">
+                <h3>60+</h3>
+                <p>Projects</p>
+            </div>
+            <div class="column">
+                <h3>99%</h3>
+                <p>Dedicated</p>
+            </div>
+        </div>
+    </section>
+    <!-- Card Section -->
+    <section class="card-section">
+        <div class="container">
+            <div class="card" x-data="{ open: false }">
+                <div class="card-image">
+                    <img src="image/1.jpg" alt="Card Image 1">
+                </div>
+                <div class="card-content">
+                    <h3>23.03.2022</h3>
+                    <div x-show="open" x-transition>
+                        <p>Sliding text content that appears when the card is clicked. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.</p>
+                    </div>
+                    <button @click="open = !open" class="toggle-button">Toggle Text</button>
+                </div>
+            </div>
+
+            <div class="card" x-data="{ open: false }">
+                <div class="card-image">
+                    <img src="image/2.jpg" alt="Card Image 2">
+                </div>
+                <div class="card-content">
+                    <h3>23.03.2022</h3>
+                    <div x-show="open" x-transition>
+                        <p>Sliding text content that appears when the card is clicked. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.</p>
+                    </div>
+                    <button @click="open = !open" class="toggle-button">Toggle Text</button>
+                </div>
+            </div>
+
+            <div class="card" x-data="{ open: false }">
+                <div class="card-image">
+                    <img src="image/3.jpg" alt="Card Image 3">
+                </div>
+                <div class="card-content">
+                    <h3>23.03.2022</h3>
+                    <div x-show="open" x-transition>
+                        <p>Sliding text content that appears when the card is clicked. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.</p>
+                    </div>
+                    <button @click="open = !open" class="toggle-button">Toggle Text</button>
+                </div>
+            </div>
+
+            <div class="card" x-data="{ open: false }">
+                <div class="card-image">
+                    <img src="image/4.jpg" alt="Card Image 4">
+                </div>
+                <div class="card-content">
+                    <h3>23.03.2022</h3>
+                    <div x-show="open" x-transition>
+                        <p>Sliding text content that appears when the card is clicked. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.</p>
+                    </div>
+                    <button @click="open = !open" class="toggle-button">Toggle Text</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <video width="1800" controls>
+            <source src="image/city.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">We'd love to build something amazing</h2>
+            <p class="cta-text">
+                Take the next step and let's work together to create something extraordinary. Start your journey today!
+            </p>
+        </div>
+        <div>
+            <a href="#" class="cta-button">Buy Now - $59</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Follow</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Our Works</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Latest News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Headquarter</h3>
+                    <p>5678 Creative Street<br>Suite #345<br>Los Angeles, CA 90021</p>
+                    <a href="#" class="map-link">View on Maps</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Conversation</h3>
+                    <p>Email: hello@yourwebsite.com</p>
+                    <p>Phone: 646-932-3253</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
